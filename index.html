@@ -1,232 +1,532 @@
-<!DOCTYPE HTML>
-<!--
-	Miniport by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Marta Espinosa</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marta Espinosa | Data Engineer Portfolio</title>
+  <meta name="description" content="Portfolio of Marta Espinosa, Data Engineer with B.S. in Biology and M.S. in Data Science specializing in ETL pipelines, SQL, Python, Data Modeling, and BI analytics." />
+  
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  
+  <!-- Custom Modern CSS -->
+  <link rel="stylesheet" href="assets/css/modern.css" />
+</head>
+<body>
 
-		<!-- Nav -->
-			<nav id="nav">
-				<ul class="container">
-					<li><a href="#top">ABOUT ME</a></li>
-					<li><a href="#work">SERVICES</a></li>
-					<li><a href="#portfolio">PORTFOLIO</a></li>
-					<li><a href="#contact">CONTACT</a></li>
-				</ul>
-			</nav>
+  <!-- Particle Background Canvas -->
+  <canvas id="bg-canvas"></canvas>
 
-		<!-- Home -->
-			<article id="top" class="wrapper style1">
-				<div class="container">
-					<div class="row">
-						<div class="col-4 col-5-large col-12-medium">
-							<span class="image fit"><img src="images/pic00.jpg" alt="" /></span>
-						</div>
-						<div class="col-8 col-7-large col-12-medium">
-							<header>
-								<h1>Hi. I'm <strong>Marta Espinosa</strong></h1>
-							</header>
-							<p>And I work as a <strong>Data scientist/Data analyst</strong>. I hold a Bachelor’s in Biology and a Master’s degree in Data Science. I translate data into valuable and comprehensible insights. My goal is to improve results, make the right decisions and save costs. I use SQL, R, Python, PowerBI and Tableau for my data projects.</p>
-							<a href="#work" class="button large scrolly">Learn about what I do</a>
-						</div>
-					</div>
-				</div>
-			</article>
+  <!-- Navigation -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#top" class="brand-logo">
+        Marta Espinosa <span class="dot">.</span>
+        <span class="brand-badge">DATA ENGINEER</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#top" class="nav-link active">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills & Stack</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-paper-plane"></i> Get In Touch
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle Navigation">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
 
-		<!-- Work -->
-			<article id="work" class="wrapper style2">
-				<div class="container">
-					<header>
-						<h2>Services</h2>
-						<p>Collect, process, analyse and present data - from supporting everyday business decisions to driving global change</p>
-					</header>
-					<div class="row aln-center">
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<img src="images/icono2.png" width="100" height="100" style="padding:5px; margin-left: 20px;">
-								<h3>Collect</h3>
-								<p>I have theoretical and practical knowledge in questionnaire design and impact assessment.Results, trends and recommendations are clearly presented in reports.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<img src="images/icono1.png" width="100" height="100" style="padding:5px; margin-left: 20px;">
-								<h3>Process</h3>
-								<p>I can offer support on improving existing workflows and creation of new processes, covering data transformation, unification, spatial and predictive analysis.</p>
-							</section>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<section class="box style1">
-								<img src="images/icono3.png" width="100" height="100" style="padding:5px; margin-left: 20px;">
-								<h3>Visualize</h3>
-								<p>Dashboards show the results in an interactive way. By clicking and drilling, you will examine trends and patterns yourself. I can also create infographics to present the results.</p>
-							</section>
-						</div>
-					</div>
-					<footer>
-						<p>Wondering how can make the best decisions using your data?</p>
-						<a href="#portfolio" class="button large scrolly">See some of my recent work</a>
-					</footer>
-				</div>
-			</article>
+  <!-- Hero Section -->
+  <section id="top" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-glow"></div>
+        <img src="images/pic00.jpg" alt="Marta Espinosa" class="hero-img" />
+        <div class="hero-status-pill">
+          <span class="status-dot"></span> Open to Data Engineering Opportunities
+        </div>
+      </div>
+      <div class="hero-content">
+        <span class="subtitle">&lt; DATA &amp; PIPELINE ARCHITECTURE &gt;</span>
+        <h1>Hi, I'm <span class="gradient-text">Marta Espinosa</span></h1>
+        <h2>I am a <span id="typewriter" class="typewriter-text gradient-text-alt">Data Engineer</span></h2>
+        <p class="hero-description">
+          With a Bachelor’s in Biology and a Master’s degree in Data Science, I bridge domain knowledge with robust engineering. I build scalable ETL/ELT data pipelines, optimize database schemas, and deliver clean, reliable data architectures that empower data-driven decision making.
+        </p>
+        <div class="hero-actions" style="display: flex; gap: 16px; flex-wrap: wrap;">
+          <a href="#portfolio" class="btn btn-primary">
+            <i class="fa-solid fa-diagram-project"></i> View Data Projects
+          </a>
+          <a href="https://github.com/MartaEspinosa-data" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fa-brands fa-github"></i> GitHub Profile
+          </a>
+          <a href="https://www.linkedin.com/in/martaespinosagarcia/" target="_blank" rel="noopener" class="btn btn-secondary">
+            <i class="fa-brands fa-linkedin"></i> LinkedIn
+          </a>
+        </div>
 
-		<!-- Portfolio -->
-			<article id="portfolio" class="wrapper style3">
-				<div class="container">
-					<header>
-						<h2>Portfolio</h2>
-						<p>A sample of my work and personal projects.</p>
-					</header>
-					<div class="row">
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="images/def.pdf" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-								<h3><a href="images/def.pdf">Deforestation exploration</a></h3>
-								<p>In this project you can observe the countries with the largest area of ​​deforestation using SQL to create awareness about the impact on the environment.</p>
-								</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="images/Social.pdf" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-								<h3><a href="images/Social.pdf">A Social News Aggregator</a></h3>
-								<p>Udiddit is a social news aggregator. The duties for this project were fix all the issues with the data model, make the system more robust and adding some web analytics using SQL.</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/MartaEspinosa-data/movies-correlation-project/blob/main/movies-correlation-project.ipynb" class="image featured"><img src="images/pic04.png" alt="" /></a>
-								<h3><a href="https://github.com/MartaEspinosa-data/movies-correlation-project/blob/main/movies-correlation-project.ipynb">Movies Correlation</a></h3>
-								<p>
-									In this project the different variables that can affect the revenue of a movie are analyzed to find out if there is a correlation between them using PYTHON, PANDAS, NUMPY and SEABORN.
-								</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/blob/main/Data%20Model%20for%20Seven%20Sages%20Brewing%20Company/Marta%20Espinosa%20-%20SSBC.pbix" class="image featured"><img src="images/pic05.png" alt="" /></a>
-								<h3><a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/blob/main/Data%20Model%20for%20Seven%20Sages%20Brewing%20Company/Marta%20Espinosa%20-%20SSBC.pbix">Brewing Company</a></h3>
-								<p>
-									Power BI report for Seven Sages Brewing Company. This data model makes possible for the company's CFO to review and analyze what beers sell well and which ones generate the highest profitability.
-								</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/MartaEspinosa-data/covid_project/blob/main/covid_final.ipynb" class="image featured"><img src="images/pic06.png" alt="" /></a>
-								<h3><a href="https://github.com/MartaEspinosa-data/covid_project/blob/main/covid_final.ipynb">Covid project</a></h3>
-								<p>									
-                                   In this project, the total cases and total deaths caused by the Covid-19 in the different countries and continents, are analyzed using PYTHON, ,NUMPY, PANDAS library and MATPLOTLIB.
-								</p>
-							</article>
-						</div>
-						<div class="col-4 col-6-medium col-12-small">
-							<article class="box style2">
-								<a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/blob/main/Marta%20Espinosa%20-%20Waggle/Marta%20Espinosa%20-waggle.pbix" class="image featured"><img src="images/pic07.png" alt="" /></a>
-								<h3><a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/blob/main/Marta%20Espinosa%20-%20Waggle/Marta%20Espinosa%20-waggle.pbix">Pet Device Report</a></h3>
-								<p>									
-									Waggle is a startup that makes smart devices for pets. This POWER BI report compares the data from the dog and cat devices to see which one is more successful among consumers.
-								</p>
-							</article>
-						</div>
-						<div class="row">
-							<div class="col-4 col-6-medium col-12-small">
-								<article class="box style2">
-									<a href="images/Market.pdf" class="image featured"><img src="images/pic08.png" alt="" /></a>
-									<h3><a href="images/Market.pdf">Market analysis Report</a></h3>
-									<p>An online clothing chain needs to create a targeted marketing campaign. This POWER BI analysis and report help to determine the best product to advertise.</p>
-								</article>
-							</div>
-							<div class="col-4 col-6-medium col-12-small">
-								<article class="box style2">
-									<a href="https://github.com/MartaEspinosa-data/Amazon-Web-Scraper/blob/main/AmazonWebScraper.ipynb" class="image featured"><img src="images/pic09.png" alt="" /></a>
-									<h3><a href="https://github.com/MartaEspinosa-data/Amazon-Web-Scraper/blob/main/AmazonWebScraper.ipynb">Amazon Web Scraper</a></h3>
-									<p>In this project we scrape data from Amazon web site using BeautifulSoup library and PYTHON to find out the status of an item and monitor price changes.
-									</p>
-								</article>	
-							</div>					
-						</div>	
-					
-					</div>
-					<footer>
-						<p>Wondering how can make the best decisions using your data?</p>
-						<a href="#contact" class="button large scrolly">Get in touch with me</a>
-					</footer>
-				</div>
-			</article>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 class="stat-num" data-target="9" data-suffix="+">0</h3>
+            <p>Data Projects</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-num" data-target="100" data-suffix="%">0</h3>
+            <p>Data Reliability Focus</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-num" data-target="6" data-suffix="+">0</h3>
+            <p>Core Technologies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-		<!-- Contact -->
-			<article id="contact" class="wrapper style4">
-				<div class="container medium">
-					<header>
-						<h2>Get in touch</h2>
-						<p>Do you have any projects in mind?</p>
-					</header>
-					<div class="row">
-						<div class="col-12">
-							<form action="mailto:martaespinosagarcia@gmail.com" method="postget" enctype="text/plain">
-								<div class="row">
-									<div class="col-6 col-12-small">
-										<input type="text" name="name" id="name" placeholder="Name" />
-									</div>
-									<div class="col-6 col-12-small">
-										<input type="text" name="subject" id="subject" placeholder="Subject" />
-									</div>
-									<div class="col-12">
-										<textarea name="message" id="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" /></li>
-											<li><input type="reset" value="Clear Form" class="alt" /></li>
-										</ul>
-									</div>
-								</div>
-							</form>
-						</div>
-						<div class="col-12">
-							<hr />
-							<h3>Find me on ...</h3>
-							<ul class="social">
-								<li><a href="https://www.linkedin.com/in/martaespinosagarcia/" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								<li><a href="https://github.com/MartaEspinosa-data" class="icon brands fa-github"><span class="label">Github</span></a></li>
-								<!--
-								<li><a href="#" class="icon solid fa-rss"><span>RSS</span></a></li>
-								<li><a href="#" class="icon brands fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="#" class="icon brands fa-foursquare"><span>Foursquare</span></a></li>
-								<li><a href="#" class="icon brands fa-skype"><span>Skype</span></a></li>
-								<li><a href="#" class="icon brands fa-soundcloud"><span>Soundcloud</span></a></li>
-								<li><a href="#" class="icon brands fa-youtube"><span>YouTube</span></a></li>
-								<li><a href="#" class="icon brands fa-blogger"><span>Blogger</span></a></li>
-								<li><a href="#" class="icon brands fa-flickr"><span>Flickr</span></a></li>
-								<li><a href="#" class="icon brands fa-vimeo"><span>Vimeo</span></a></li>
-								-->
-							</ul>
-							<hr />
-						</div>
-					</div>
-					<footer>
-						<ul id="copyright">
-							<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-						</ul>
-					</footer>
-				</div>
-			</article>
+  <!-- Skills & Stack Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Core Competencies</span>
+        <h2 class="section-title">Technical Expertise &amp; Stack</h2>
+        <p class="section-subtitle">Combining scientific rigor with modern data engineering tools to build reliable, high-volume data ecosystems.</p>
+      </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+      <div class="skills-grid">
+        <div class="glass-panel skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h3>Data Pipelines &amp; ETL/ELT</h3>
+          <p>Designing, automating, and monitoring batch and streaming data processing workflows with high reliability.</p>
+          <div class="skill-tags">
+            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="tag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="tag">Spark</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">dbt</span>
+            <span class="tag">Web Scraping</span>
+          </div>
+        </div>
 
-	</body>
+        <div class="glass-panel skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-database"></i>
+          </div>
+          <h3>Data Warehousing &amp; Modeling</h3>
+          <p>Architecting relational, star-schema, and dimensional data models optimized for fast query performance.</p>
+          <div class="skill-tags">
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">Dimensional Modeling</span>
+            <span class="tag">Data Normalization</span>
+            <span class="tag">Query Tuning</span>
+          </div>
+        </div>
+
+        <div class="glass-panel skill-card">
+          <div class="skill-icon">
+            <i class="fa-solid fa-chart-pie"></i>
+          </div>
+          <h3>Analytics Engineering &amp; BI</h3>
+          <p>Transforming complex datasets into executive dashboards, KPIs, and interactive reporting tools.</p>
+          <div class="skill-tags">
+            <span class="tag"><i class="fa-solid fa-chart-column"></i> Power BI</span>
+            <span class="tag">Tableau</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Seaborn</span>
+            <span class="tag">Data Storytelling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Data Pipeline Architecture -->
+  <section id="architecture" class="pipeline-section">
+    <div class="container">
+      <div class="glass-panel pipeline-card">
+        <div class="section-header" style="margin-bottom: 30px;">
+          <span class="section-tag">// Data Architecture</span>
+          <h2 class="section-title">End-to-End Data Pipeline Lifecycle</h2>
+          <p class="section-subtitle">How I design and structure scalable data operations from raw source ingestion to final business intelligence.</p>
+        </div>
+
+        <div class="pipeline-flow">
+          <div class="pipeline-step">
+            <span class="step-num">STAGE 01</span>
+            <h4><i class="fa-solid fa-cloud-arrow-down" style="color: var(--cyan);"></i> Ingestion</h4>
+            <p>APIs, Web Scrapers, Relational DBs &amp; External Flat Files (CSV, Parquet, JSON)</p>
+          </div>
+          <div class="pipeline-step">
+            <span class="step-num">STAGE 02</span>
+            <h4><i class="fa-solid fa-code-branch" style="color: var(--purple);"></i> Transformation</h4>
+            <p>Data cleaning, schema alignment, data quality checks &amp; enrichment via Python &amp; SQL</p>
+          </div>
+          <div class="pipeline-step">
+            <span class="step-num">STAGE 03</span>
+            <h4><i class="fa-solid fa-server" style="color: var(--blue);"></i> Storage &amp; Modeling</h4>
+            <p>Relational Databases, Data Warehouses &amp; Star-Schema Dimensional Models</p>
+          </div>
+          <div class="pipeline-step">
+            <span class="step-num">STAGE 04</span>
+            <h4><i class="fa-solid fa-chart-line" style="color: var(--emerald);"></i> Delivery &amp; BI</h4>
+            <p>Interactive Power BI Dashboards, Executive Reports &amp; Downstream Analytics</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Projects Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">// Featured Works</span>
+        <h2 class="section-title">Projects &amp; Case Studies</h2>
+        <p class="section-subtitle">Explore selected data engineering pipelines, AI RAG systems, database optimization, and BI analytics.</p>
+      </div>
+
+      <!-- Category Filter Tabs -->
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="rag">AI &amp; RAG</button>
+        <button class="filter-btn" data-filter="sql">Data Pipelines &amp; SQL</button>
+        <button class="filter-btn" data-filter="python">Python Analytics</button>
+        <button class="filter-btn" data-filter="powerbi">Power BI Reports</button>
+      </div>
+
+      <div class="portfolio-grid">
+
+        <!-- Project: AI Talent Intelligence System -->
+        <article class="glass-panel portfolio-card" data-category="rag python">
+          <div class="portfolio-img-wrapper">
+            <img src="images/ai_talent_system.png" alt="AI Talent Intelligence System Architecture" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-brain"></i> AI &amp; RAG Multi-Agent</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">AI Talent Intelligence System</h3>
+            <p class="portfolio-desc">
+              Enterprise-grade multi-agent RAG platform combining vector retrieval, persistent memory, and LLM orchestration (GPT-4o-mini) to automate candidate CV parsing, evaluation, and question generation.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">AI / RAG</span>
+              <span class="tag">Multi-Agent</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Streamlit</span>
+              <span class="tag">Python</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/ai_talent_system" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 1 -->
+        <article class="glass-panel portfolio-card" data-category="sql">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic01.jpg" alt="Deforestation exploration" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-database"></i> SQL &amp; Data Modeling</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Deforestation Exploration</h3>
+            <p class="portfolio-desc">
+              SQL data analysis evaluating country-level deforestation data globally. Structured relational queries to uncover environmental impacts and area loss trends over time.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">SQL</span>
+              <span class="tag">Data Analysis</span>
+              <span class="tag">Environment</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="images/def.pdf" target="_blank" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> View PDF Report
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-panel portfolio-card" data-category="sql">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic02.jpg" alt="Udiddit Social News Aggregator" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-database"></i> Relational Database Engineering</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Udiddit: Social News Aggregator</h3>
+            <p class="portfolio-desc">
+              Re-engineered and normalized an inefficient database schema for a social news platform. Fixed data integrity issues, implemented constraints, and added user web analytics using SQL.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Schema Design</span>
+              <span class="tag">Data Normalization</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="images/Social.pdf" target="_blank" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> View PDF Report
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-panel portfolio-card" data-category="python">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic04.png" alt="Movies Correlation Project" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-brands fa-python"></i> Python &amp; Data Pipeline</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Movies Revenue Correlation Analysis</h3>
+            <p class="portfolio-desc">
+              Data extraction and correlation analysis pipeline examining variables affecting movie box-office revenue using Python, Pandas, NumPy, and Seaborn heatmaps.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Seaborn</span>
+              <span class="tag">Jupyter</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/movies-correlation-project/blob/main/movies-correlation-project.ipynb" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Notebook
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="glass-panel portfolio-card" data-category="powerbi">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic05.png" alt="Seven Sages Brewing Company" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-chart-column"></i> Power BI &amp; Financial Modeling</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Brewing Company Profitability Model</h3>
+            <p class="portfolio-desc">
+              Comprehensive financial data model and interactive Power BI report for Seven Sages Brewing Company. Enables executive leadership to analyze beer margins and product profitability.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Power BI</span>
+              <span class="tag">DAX</span>
+              <span class="tag">Financial Modeling</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/tree/main/Data%20Model%20for%20Seven%20Sages%20Brewing%20Company" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="glass-panel portfolio-card" data-category="python">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic06.png" alt="Covid project" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-brands fa-python"></i> Data Pipeline &amp; Analysis</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Covid-19 Global Data Pipeline</h3>
+            <p class="portfolio-desc">
+              Data cleaning and transformation pipeline analyzing global infection and mortality trends across countries and continents using Python, NumPy, Pandas, and Matplotlib.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Python</span>
+              <span class="tag">Pandas</span>
+              <span class="tag">Matplotlib</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/covid_project/blob/main/covid_final.ipynb" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Notebook
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="glass-panel portfolio-card" data-category="powerbi">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic07.png" alt="Waggle Pet Device Report" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-chart-column"></i> Power BI Product Analytics</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Waggle Smart Pet Device Analytics</h3>
+            <p class="portfolio-desc">
+              Product intelligence dashboard comparing device adoption and telemetry metrics between dog and cat smart collar lines for startup commercial strategy.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Power BI</span>
+              <span class="tag">Product Analytics</span>
+              <span class="tag">User Telemetry</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/udacity-powerBI-projects/tree/main/Marta%20Espinosa%20-%20Waggle" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Repository
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="glass-panel portfolio-card" data-category="powerbi">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic08.png" alt="Market Analysis Report" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-solid fa-chart-column"></i> Customer Intelligence</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Retail Market &amp; Customer Analytics</h3>
+            <p class="portfolio-desc">
+              Targeted marketing analytics and segmentation report for an e-commerce apparel company, guiding advertising spend toward high-ROI product categories.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Power BI</span>
+              <span class="tag">Market Segmentation</span>
+              <span class="tag">ROI Analytics</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="images/Market.pdf" target="_blank" class="btn btn-primary btn-sm">
+                <i class="fa-solid fa-file-pdf"></i> View PDF Report
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="glass-panel portfolio-card" data-category="python">
+          <div class="portfolio-img-wrapper">
+            <img src="images/pic09.png" alt="Amazon Web Scraper" />
+            <div class="portfolio-overlay">
+              <span class="portfolio-category"><i class="fa-brands fa-python"></i> Web Scraping &amp; Automation</span>
+            </div>
+          </div>
+          <div class="portfolio-content">
+            <h3 class="portfolio-title">Amazon Automated Price Monitoring Scraper</h3>
+            <p class="portfolio-desc">
+              Automated Python web scraper built with BeautifulSoup that monitors product availability, logs price fluctuations into CSV storage, and alerts on price drops.
+            </p>
+            <div class="portfolio-tech">
+              <span class="tag">Python</span>
+              <span class="tag">BeautifulSoup</span>
+              <span class="tag">Automation</span>
+              <span class="tag">CSV Pipeline</span>
+            </div>
+            <div class="portfolio-footer">
+              <a href="https://github.com/MartaEspinosa-data/Amazon-Web-Scraper/blob/main/AmazonWebScraper.ipynb" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
+                <i class="fa-brands fa-github"></i> View Notebook
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="glass-panel contact-card">
+        <div class="contact-info">
+          <span class="section-tag">// Get In Touch</span>
+          <h3>Let's build something scalable together</h3>
+          <p>Whether you have a data engineering role, a pipeline project, or a database query optimization task in mind, feel free to reach out!</p>
+          
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-details">
+              <span>Email Me</span>
+              <a href="mailto:martaespinosagarcia@gmail.com">martaespinosagarcia@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+            <div class="contact-details">
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/martaespinosagarcia/" target="_blank" rel="noopener">linkedin.com/in/martaespinosagarcia</a>
+            </div>
+          </div>
+
+          <div class="contact-method">
+            <div class="contact-icon">
+              <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="contact-details">
+              <span>GitHub</span>
+              <a href="https://github.com/MartaEspinosa-data" target="_blank" rel="noopener">github.com/MartaEspinosa-data</a>
+            </div>
+          </div>
+        </div>
+
+        <form action="mailto:martaespinosagarcia@gmail.com" method="post" enctype="text/plain" class="contact-form">
+          <div class="form-group">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Johnson" required />
+          </div>
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" name="subject" class="form-input" placeholder="Data Engineering Inquiry" required />
+          </div>
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" name="message" class="form-textarea" placeholder="Tell me about your project or opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/martaespinosagarcia/" target="_blank" rel="noopener" class="social-icon" title="LinkedIn">
+          <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+        <a href="https://github.com/MartaEspinosa-data" target="_blank" rel="noopener" class="social-icon" title="GitHub">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:martaespinosagarcia@gmail.com" class="social-icon" title="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
+      <p>&copy; 2026 Marta Espinosa. All rights reserved. | Designed for Data Engineering Excellence.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/modern.js"></script>
+
+</body>
 </html>
