@@ -213,10 +213,10 @@ function initStatsCounter() {
   const stats = document.querySelectorAll('.stat-num');
   let animated = false;
 
-  window.addEventListener('scroll', () => {
+  function triggerCounter() {
     if (stats.length && !animated) {
       const pos = stats[0].getBoundingClientRect().top;
-      if (pos < window.innerHeight - 100) {
+      if (pos < window.innerHeight + 100) {
         animated = true;
         stats.forEach(stat => {
           const target = parseInt(stat.getAttribute('data-target') || '0');
@@ -234,5 +234,9 @@ function initStatsCounter() {
         });
       }
     }
-  });
+  }
+
+  // Trigger check on load and on scroll
+  triggerCounter();
+  window.addEventListener('scroll', triggerCounter);
 }
